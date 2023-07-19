@@ -1,11 +1,15 @@
 import json
 
 
+def load_json_data(filepath):
+    with open(filepath) as file:
+        data = json.load(file)
+    return data
+
+
 def generate_diff(filepath1, filepath2):
-    with open(filepath1) as file1:
-        data1 = json.load(file1)
-    with open(filepath2) as file2:
-        data2 = json.load(file2)
+    data1 = load_json_data(filepath1)
+    data2 = load_json_data(filepath2)
 
     diff = []
 
