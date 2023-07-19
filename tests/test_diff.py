@@ -35,4 +35,3 @@ def test_generate_diff_with_different_json_files(tmp_path):
 def test_generate_diff_with_missing_files():
     with pytest.raises(FileNotFoundError):
         generate_diff('non_existent_file.json', 'another_non_existent_file.json')
-
