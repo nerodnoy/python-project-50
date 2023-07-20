@@ -1,6 +1,6 @@
 import json
 import pytest
-from gendiff.diff import generate_diff
+from gendiff.generate_diff import generate_diff
 
 def test_generate_diff_with_equal_json_files(tmp_path):
     data = {'key1': 42, 'key2': 'value'}
