@@ -2,6 +2,7 @@ import json
 import pytest
 from gendiff.generate_diff import generate_diff
 
+
 def test_generate_diff_with_equal_json_files(tmp_path):
     data = {'key1': 42, 'key2': 'value'}
     filepath1 = tmp_path / 'file1.json'
@@ -12,6 +13,7 @@ def test_generate_diff_with_equal_json_files(tmp_path):
 
     expected_diff = '{\n    key1: 42\n    key2: value\n}'
     assert generate_diff(filepath1, filepath2) == expected_diff
+
 
 def test_generate_diff_with_different_json_files(tmp_path):
     data1 = {'key1': 42, 'key2': 'value1'}
@@ -32,6 +34,8 @@ def test_generate_diff_with_different_json_files(tmp_path):
     )
     assert generate_diff(filepath1, filepath2) == expected_diff
 
+
 def test_generate_diff_with_missing_files():
     with pytest.raises(FileNotFoundError):
         generate_diff('non_existent_file.json', 'another_non_existent_file.json')
+
