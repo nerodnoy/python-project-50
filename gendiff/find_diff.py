@@ -24,5 +24,4 @@ def get_diff(data1, data2):
             diff.append(f"  - {key}: {serialize_value(data1[key])}")
             diff.append(f"  + {key}: {serialize_value(data2[key])}")
 
-    return "{\n" + "\n".join(diff) + "\n}"
-
+    return '{\n' + '\n'.join(diff) + '\n}'
