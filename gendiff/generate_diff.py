@@ -7,5 +7,5 @@ def generate_diff(file1, file2):
     file2 = open_file(file2)
 
     diff = get_diff(file1, file2)
-    
+
     return diff
