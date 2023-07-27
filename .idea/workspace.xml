@@ -4,19 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ab4709b-aa36-4e25-9ebb-682c0b782cfb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/gendiff/argparser.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gendiff/find_diff.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/find_diff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gendiff/generate_diff.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/generate_diff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gendiff/scripts/gendiff.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/scripts/gendiff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/fixtures/json/file1.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fixtures/json/file1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/fixtures/json/file2.json" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fixtures/json/file2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/fixtures/results/result_json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fixtures/results/result_json.txt" afterDir="false" />
-    </list>
+    <list default="true" id="3ab4709b-aa36-4e25-9ebb-682c0b782cfb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

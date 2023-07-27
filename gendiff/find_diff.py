@@ -24,4 +24,4 @@ def get_diff(data1, data2):
             diff.append(f"  - {key}: {get_json_or_yaml(data1[key])}")
             diff.append(f"  + {key}: {get_json_or_yaml(data2[key])}")
 
-    return '{\n' + '\n'.join(diff) + '\n}'
+    return "{\n" + "\n".join(diff) + "\n}"
