@@ -6,7 +6,7 @@ def get_json_or_yaml(value):
     if isinstance(value, dict):
         return yaml.dump(value)
     elif isinstance(value, str):
-        return json.dumps(value)[1:-1]  # removed quotes here :( ???
+        return json.dumps(value)[1:-1]
     return json.dumps(value)
 
 
