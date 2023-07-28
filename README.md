@@ -13,6 +13,12 @@ GitHub Actions:
 
 [![main](https://github.com/nerodnoy/python-project-50/actions/workflows/main.yml/badge.svg)](https://github.com/nerodnoy/python-project-50/actions/workflows/main.yml)
 
-Brief representation of gendiff (WIP): 
+Brief representation of gendiff (WIP):
+
+1. Difference between simple json and yaml files): 
 
 [![asciicast](https://asciinema.org/a/ufoRdcWsC33FwKyDY4ezQG8DU.svg)](https://asciinema.org/a/ufoRdcWsC33FwKyDY4ezQG8DU)
+
+2. Difference between nested json and yaml files:
+
+[![asciicast](https://asciinema.org/a/JOqvIdM0GDRvZMurM7WBIQ8AG.svg)](https://asciinema.org/a/JOqvIdM0GDRvZMurM7WBIQ8AG)
