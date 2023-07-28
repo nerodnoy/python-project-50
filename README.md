@@ -22,3 +22,7 @@ Brief representation of gendiff (WIP):
 2. Difference between nested json and yaml files:
 
 [![asciicast](https://asciinema.org/a/JOqvIdM0GDRvZMurM7WBIQ8AG.svg)](https://asciinema.org/a/JOqvIdM0GDRvZMurM7WBIQ8AG)
+
+3. Different style of outputs: Stylish and Plain
+
+[![asciicast](https://asciinema.org/a/qu7zpFTBm0C4psXApZuyiNGpb.svg)](https://asciinema.org/a/qu7zpFTBm0C4psXApZuyiNGpb)
