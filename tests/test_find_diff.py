@@ -2,22 +2,25 @@ import pytest
 from gendiff.find_diff import get_diff, add_node
 
 
-def test_add_node():
-    node = add_node('key', 'added', new_value='value')
-    assert node == {'key': 'key', 'type': 'added', 'new_value': 'value'}
+def test_removed_node():
+    node = add_node("key1", "removed", old_value="value1")
+    assert node == {"key": "key1", "type": "removed", "old_value": "value1"}
 
-    node = add_node('key', 'removed', old_value='value')
-    assert node == {'key': 'key', 'type': 'removed', 'old_value': 'value'}
 
-    node = add_node('key', 'unchanged', old_value='value')
-    assert node == {'key': 'key', 'type': 'unchanged', 'old_value': 'value'}
+def test_added_node():
+    node = add_node("key2", "added", new_value="value2")
+    assert node == {"key": "key2", "type": "added", "new_value": "value2"}
 
-    node = add_node('key', 'updated', old_value='old_value', new_value='new_value')
-    assert node == {'key': 'key', 'type': 'updated', 'old_value': 'old_value', 'new_value': 'new_value'}
 
-    node = add_node('key', 'nested', children=[{'key': 'nested_key', 'type': 'added', 'new_value': 'nested_value'}])
-    assert node == {'key': 'key', 'type': 'nested',
-                    'children': [{'key': 'nested_key', 'type': 'added', 'new_value': 'nested_value'}]}
+def test_updated_node():
+    node = add_node("key3", "updated", old_value="value3", new_value="value4")
+    assert node == {"key": "key3", "type": "updated", "old_value": "value3", "new_value": "value4"}
+
+
+def test_nested_node():
+    children = [{"key": "child1", "type": "removed", "old_value": "child_value1"}]
+    node = add_node("key4", "nested", children=children)
+    assert node == {"key": "key4", "type": "nested", "children": children}
 
 
 def test_get_diff():

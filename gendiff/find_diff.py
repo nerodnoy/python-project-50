@@ -26,23 +26,19 @@ def get_diff(file1, file2):
     return tree
 
 
-def add_node(key, node_type, **kwargs):
+def add_node(key, node_type, old_value=None, new_value=None, children=None):
     node = {
         "key": key,
         "type": node_type,
     }
 
-    if node_type == "removed":
-        node["old_value"] = kwargs.get("old_value")
+    if old_value is not None:
+        node["old_value"] = old_value
 
-    elif node_type == "added":
-        node["new_value"] = kwargs.get("new_value")
+    if new_value is not None:
+        node["new_value"] = new_value
 
-    elif node_type == "updated":
-        node["old_value"] = kwargs.get("old_value")
-        node["new_value"] = kwargs.get("new_value")
-
-    elif node_type == "nested":
-        node["children"] = kwargs.get("children")
+    if children:
+        node["children"] = children
 
     return node
