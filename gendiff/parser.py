@@ -3,7 +3,8 @@ import argparse
 
 def get_parser_args():
     parser = argparse.ArgumentParser(
-        description="Generate diff between two files. Supported extensions: JSON/YAML/YML."
+        description="Generate diff between two files. "
+                    "Supported extensions: JSON/YAML/YML."
     )
 
     parser.add_argument("first_file", type=str)
