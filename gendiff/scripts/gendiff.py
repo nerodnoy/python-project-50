@@ -4,7 +4,7 @@ from gendiff.parser import get_parser_args
 
 def main():
     args = get_parser_args()
-    diff = generate_diff(args.first_file, args.second_file)
+    diff = generate_diff(args.first_file, args.second_file, args.format)
     print(diff)
 
 

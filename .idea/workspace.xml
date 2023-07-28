@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ab4709b-aa36-4e25-9ebb-682c0b782cfb" name="Changes" comment="" />
+    <list default="true" id="3ab4709b-aa36-4e25-9ebb-682c0b782cfb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/gendiff/formatters/format_ouput.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gendiff/formatters/stylish.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/fixtures/json/file1_nested.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/fixtures/json/file2_nested.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/fixtures/results/result_pathfile_json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/fixtures/results/result_pathfile_yaml.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/fixtures/yaml/file1_nested.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/fixtures/yaml/file2_nested.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/file_management.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/file_management.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/find_diff.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/find_diff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/generate_diff.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/generate_diff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/scripts/gendiff.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/scripts/gendiff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_find_diff.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_find_diff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_gendiff.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gendiff.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,14 +45,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/nastya/python-project-50"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nastya/python-project-50&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
