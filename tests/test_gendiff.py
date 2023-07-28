@@ -8,23 +8,46 @@ def get_data_for_results(path):
 
 
 @pytest.mark.parametrize('path1, path2, expected',
-                         [('tests/fixtures/json/file1.json',
-                           'tests/fixtures/json/file2.json',
+                         [('tests/fixtures/json/file_simple1.json',
+                           'tests/fixtures/json/file_simple2.json',
                            get_data_for_results(
-                               'tests/fixtures/results/result_json.txt')),
-                          ('tests/fixtures/yaml/file1.yaml',
-                           'tests/fixtures/yaml/file2.yaml',
+                               'tests/fixtures/results/plain_simple.txt')),
+                          ('tests/fixtures/yaml/file_simple1.yaml',
+                           'tests/fixtures/yaml/file_simple2.yaml',
                            get_data_for_results(
-                               'tests/fixtures/results/result_yaml.txt')),
-                          # ('tests/fixtures/json/file1_nested.json',
-                          #  'tests/fixtures/json/file2_nested.json',
-                          #  get_data_for_results(
-                          #      'tests/fixtures/results/result_pathfile_json.txt')),
-                          # ('tests/fixtures/yaml/file1_nested.yaml',
-                          #  'tests/fixtures/yaml/file2_nested.yaml',
-                          #  get_data_for_results(
-                          #      'tests/fixtures/results/result_pathfile_yaml.txt'))
+                               'tests/fixtures/results/plain_simple.txt')),
+                          ('tests/fixtures/json/file_nested1.json',
+                           'tests/fixtures/json/file_nested2.json',
+                           get_data_for_results(
+                               'tests/fixtures/results/plain_nested.txt')),
+                          ('tests/fixtures/yaml/file_nested1.yaml',
+                           'tests/fixtures/yaml/file_nested2.yaml',
+                           get_data_for_results(
+                               'tests/fixtures/results/plain_nested.txt'))
+                          ]
+                         )
+def test_generate_diff_plain(path1, path2, expected):
+    assert generate_diff(path1, path2, 'plain') == expected
+
+
+@pytest.mark.parametrize('path1, path2, expected',
+                         [('tests/fixtures/json/file_simple1.json',
+                           'tests/fixtures/json/file_simple2.json',
+                           get_data_for_results(
+                               'tests/fixtures/results/stylish_simple.txt')),
+                          ('tests/fixtures/yaml/file_simple1.yaml',
+                           'tests/fixtures/yaml/file_simple2.yaml',
+                           get_data_for_results(
+                               'tests/fixtures/results/stylish_simple.txt')),
+                          #  ('tests/fixtures/json/file_nested1.json',
+                          #   'tests/fixtures/json/file_nested2.json',
+                          #   get_data_for_results(
+                          #       'tests/fixtures/results/stylish_nested.txt')),
+                          #  ('tests/fixtures/yaml/file_nested1.yaml',
+                          #   'tests/fixtures/yaml/file_nested2.yaml',
+                          #   get_data_for_results(
+                          #       'tests/fixtures/results/stylish_nested.txt'))
                           ]
                          )
 def test_generate_diff_stylish(path1, path2, expected):
-    assert generate_diff(path1, path2) == expected.strip()
+    assert generate_diff(path1, path2, 'stylish') == expected

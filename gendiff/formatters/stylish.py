@@ -1,7 +1,9 @@
 import itertools
-
-NESTED = "{}    {}: {}"
-STYLISH = "{}  {} {}: {}"
+from gendiff.formatters.converters import convert_to_str
+from gendiff.constants import (
+    TEMPLATE_NESTED,
+    TEMPLATE_STYLISH
+)
 
 
 def create_stylish(diff):
@@ -26,7 +28,7 @@ def format_diff(data, depth=0):
 
 def format_nested_node(node, indent, depth):
     nested_lines = format_diff(node["children"], depth + 1)
-    return NESTED.format(indent, node["key"], nested_lines)
+    return TEMPLATE_NESTED.format(indent, node["key"], nested_lines)
 
 
 def format_single_node(node, indent, depth):
@@ -53,10 +55,10 @@ def format_line(key, value, sign, depth):
     lines = []
 
     if isinstance(value, dict):
-        lines.append(STYLISH.format(
+        lines.append(TEMPLATE_STYLISH.format(
             indent, sign, key, format_dict(value, depth + 1)))
     else:
-        lines.append(STYLISH.format(
+        lines.append(TEMPLATE_STYLISH.format(
             indent, sign, key, convert_to_str(value)))
 
     return "\n".join(lines)
@@ -71,16 +73,3 @@ def format_dict(dic, depth):
 
     result = itertools.chain("{", lines, [indent + "}"])
     return "\n".join(result)
-
-
-def convert_to_str(value):
-    if isinstance(value, bool):
-        converted = str(value).lower()
-    elif value == "":
-        converted = ""
-    elif value is None:
-        converted = "null"
-    else:
-        converted = str(value)
-
-    return converted

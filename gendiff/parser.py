@@ -3,7 +3,7 @@ import argparse
 
 def get_parser_args():
     parser = argparse.ArgumentParser(
-        description="Generate diff between two JSON and YAML/YML files."
+        description="Generate diff between two files. Supported extensions: JSON/YAML/YML."
     )
 
     parser.add_argument("first_file", type=str)
@@ -12,8 +12,9 @@ def get_parser_args():
     parser.add_argument(
         "-f", "--format",
         type=str,
-        help="set format of output",  # add (stylish, plain ... ) later
-        choices=["stylish"],
+        help="set format of output (stylish or plain)",
+        choices=["stylish",
+                 "plain"],
         default='stylish'
     )
 
