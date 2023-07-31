@@ -15,7 +15,7 @@ def create_stylish(diff: list) -> str:
     human-readable way with indentation and symbolic annotations.
 
     :param diff: Difference tree as a list of dictionaries.
-    :type diff: list[dict]
+    :type diff: list
     :return: String representation of the difference in "stylish" format.
     :rtype: str
     """
@@ -91,7 +91,7 @@ def format_single_node(node: dict, indent: str, depth: int) -> list:
     :type depth: int
     :return: List of strings representing the difference lines for the node
              in "stylish" format.
-    :rtype: list[str]
+    :rtype: list
     """
 
     lines = []
