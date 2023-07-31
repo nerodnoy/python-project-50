@@ -1,6 +1,6 @@
 <div align="center">
 
-![Image alt](https://github.com/nerodnoy/python-project-50/kandinsky-download-1690797048402.png)
+![Image alt](https://github.com/nerodnoy/python-project-50/blob/main/kandinsky-download-1690797048402.png)
 <h1>Difference Generator</h1>
 
 Find the difference between two files.
