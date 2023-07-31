@@ -75,31 +75,31 @@ or
 
 Comparison of 2 simple files:
 
-[![asciicast](https://asciinema.org/a/7kNi0MjE6l3876cSMnjtNTPQE.svg)](https://asciinema.org/a/7kNi0MjE6l3876cSMnjtNTPQE)
+<a href="https://asciinema.org/a/7kNi0MjE6l3876cSMnjtNTPQE" target="_blank"><img src="https://asciinema.org/a/7kNi0MjE6l3876cSMnjtNTPQE.svg" width="500"/></a>
 
 Comparison of 2 nested files:
 
-[![asciicast](https://asciinema.org/a/Jx5gXlwdIDbSy6LjymLbI7d3o.svg)](https://asciinema.org/a/Jx5gXlwdIDbSy6LjymLbI7d3o)
+<a href="https://asciinema.org/a/Jx5gXlwdIDbSy6LjymLbI7d3o" target="_blank"><img src="https://asciinema.org/a/Jx5gXlwdIDbSy6LjymLbI7d3o.svg" width="500"/></a>
 
 ### *Plain format*
 
 Comparison of 2 simple files:
 
-[![asciicast](https://asciinema.org/a/pX5WmYUVtRheBHdL1Pz2sZAUH.svg)](https://asciinema.org/a/pX5WmYUVtRheBHdL1Pz2sZAUH)
+<a href="https://asciinema.org/a/pX5WmYUVtRheBHdL1Pz2sZAUH" target="_blank"><img src="https://asciinema.org/a/pX5WmYUVtRheBHdL1Pz2sZAUH.svg" width="500"/></a>
 
 Comparison of 2 nested files:
 
-[![asciicast](https://asciinema.org/a/RmnZVhAFIF8ZJG13QZnZjXYdH.svg)](https://asciinema.org/a/RmnZVhAFIF8ZJG13QZnZjXYdH)
+<a href="https://asciinema.org/a/RmnZVhAFIF8ZJG13QZnZjXYdH" target="_blank"><img src="https://asciinema.org/a/RmnZVhAFIF8ZJG13QZnZjXYdH.svg" width="500"/></a>
 
 ### *JSON format*
 
 Comparison of 2 simple files:
 
-[![asciicast](https://asciinema.org/a/fOD4vGVVny3WYHBIHyaZPlI9q.svg)](https://asciinema.org/a/fOD4vGVVny3WYHBIHyaZPlI9q)
+<a href="https://asciinema.org/a/fOD4vGVVny3WYHBIHyaZPlI9q" target="_blank"><img src="https://asciinema.org/a/fOD4vGVVny3WYHBIHyaZPlI9q.svg" width="500"/></a>
 
 Comparison of 2 nested files:
 
-asciinema.org/a/ajAjwzgi9wuThx1MCv4hcXp2s
+<a href="https://asciinema.org/a/ajAjwzgi9wuThx1MCv4hcXp2s" target="_blank"><img src="https://asciinema.org/a/ajAjwzgi9wuThx1MCv4hcXp2s.svg" width="500"/></a>
 
 > Note: If there is no specific format provided when using the package, default output format is *Stylish*.
 
