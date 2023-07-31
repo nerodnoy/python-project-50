@@ -2,6 +2,23 @@ import argparse
 
 
 def get_parser_args():
+    """
+    Parse command-line arguments for generating the difference report.
+
+    This function sets up an ArgumentParser to handle command-line arguments.
+    It defines the required positional arguments for the paths to the first
+    and second files to compare. Additionally, it allows specifying an
+    optional argument to choose the output format of the difference report.
+
+
+    Parameters:
+        - first_file: Path to the first file for comparison.
+        - second_file: Path to the second file for comparison.
+        - format: Format for output (e.g., default='stylish', 'plain', 'json').
+
+    :return: Parsed input values (argparse arguments)
+    """
+
     parser = argparse.ArgumentParser(
         description="Generate diff between two files. "
                     "Supported extensions: JSON/YAML/YML."

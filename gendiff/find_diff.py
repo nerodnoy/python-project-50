@@ -1,4 +1,21 @@
-def get_diff(file1, file2):
+def get_diff(file1: dict, file2: dict) -> list:
+    """
+    Compare two dictionaries and generate a difference tree.
+
+    This function takes two dictionaries as input and compares their keys and
+    values to identify differences between them. It returns a list representing
+    a difference tree, where each node contains information about the key,
+    type of difference (added, removed, unchanged, updated, or nested), and
+    relevant values for the corresponding difference type.
+
+    :param file1: The first dictionary to compare.
+    :type file1: dict
+    :param file2: The second dictionary to compare.
+    :type file2: dict
+    :return: A list representing the difference tree.
+    :rtype: list[dict]
+    """
+
     keys = sorted(set(file1.keys()) | set(file2.keys()))
     tree = []
 
@@ -26,7 +43,37 @@ def get_diff(file1, file2):
     return tree
 
 
-def add_node(key, node_type, old_value=None, new_value=None, children=None):
+def add_node(
+    key: str,
+    node_type: str,
+    old_value=None,
+    new_value=None,
+    children=None
+) -> dict:
+    """
+    Create a difference tree node.
+
+    This function creates a node for the difference tree, representing a
+    difference between two keys in the dictionaries being compared. The node
+    contains information about the key, the type of difference (added,
+    removed, unchanged, updated, or nested), and relevant values for the
+    corresponding difference type.
+
+    :param key: The key representing the difference.
+    :type key: str
+    :param node_type: The type of difference (added, removed, unchanged,
+                      updated, or nested).
+    :type node_type: str
+    :param old_value: The old value associated with the key (optional).
+    :type old_value: any
+    :param new_value: The new value associated with the key (optional).
+    :type new_value: any
+    :param children: The nested difference tree for a nested difference
+                     (optional).
+    :type children: list
+    :return: A dictionary representing the difference tree node.
+    :rtype: dict
+    """
     node = {
         "key": key,
         "type": node_type,
