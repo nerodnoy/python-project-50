@@ -1,28 +1,94 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/nerodnoy/python-project-50/workflows/hexlet-check/badge.svg)](https://github.com/nerodnoy/python-project-50/actions)
+README v 0.1
 
-Codeclimate support:
+![Actions Status](https://github.com/nerodnoy/python-project-50/workflows/hexlet-check/badge.svg)  [![main](https://github.com/nerodnoy/python-project-50/actions/workflows/main.yml/badge.svg)](https://github.com/nerodnoy/python-project-50/actions/workflows/main.yml) [![Maintainability](https://api.codeclimate.com/v1/badges/0e19e094594cd2be67e5/maintainability)](https://codeclimate.com/github/nerodnoy/python-project-50/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/0e19e094594cd2be67e5/test_coverage)](https://codeclimate.com/github/nerodnoy/python-project-50/test_coverage)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/0e19e094594cd2be67e5/maintainability)](https://codeclimate.com/github/nerodnoy/python-project-50/maintainability)
+## Difference generator 
 
-Test coverage:
+Generate the difference between two files.
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/0e19e094594cd2be67e5/test_coverage)](https://codeclimate.com/github/nerodnoy/python-project-50/test_coverage)
+## About
 
-GitHub Actions:
+This package can compare two files....
 
-[![main](https://github.com/nerodnoy/python-project-50/actions/workflows/main.yml/badge.svg)](https://github.com/nerodnoy/python-project-50/actions/workflows/main.yml)
+### Supported formats
 
-Brief representation of gendiff (WIP):
+ - JSON
+ - YAML
 
-1. Difference between simple json and yaml files): 
+### Various output formats
 
-[![asciicast](https://asciinema.org/a/ufoRdcWsC33FwKyDY4ezQG8DU.svg)](https://asciinema.org/a/ufoRdcWsC33FwKyDY4ezQG8DU)
+- Plain text
+- Structured text
+- JSON
 
-2. Difference between nested json and yaml files:
+## Installation
 
-[![asciicast](https://asciinema.org/a/JOqvIdM0GDRvZMurM7WBIQ8AG.svg)](https://asciinema.org/a/JOqvIdM0GDRvZMurM7WBIQ8AG)
+To use the package you need to clone repository to your device:
 
-3. Different style of outputs: Stylish and Plain
+    git clone https://github.com/nerodnoy/python-project-50.git
 
-[![asciicast](https://asciinema.org/a/qu7zpFTBm0C4psXApZuyiNGpb.svg)](https://asciinema.org/a/qu7zpFTBm0C4psXApZuyiNGpb)
+Switch to package's working directory:
+
+    cd python-project-50
+
+Use poetry and pip to install the package:
+
+    poetry build  
+    python3 -m pip install --user dist/*.whl
+
+## Usage
+
+Difference Generator can be used as **CLI tool** or as an **external library**.
+
+### As an external library
+
+    from gendiff import generate_diff  
+    diff = generate_diff(file_path1, file_path2, file_format)
+
+### As CLI tool
+
+    gendiff [-f file_format] file_path1 file_path2
+
+or 
+
+    gendiff [--format file_format] file_path1 file_path2
+
+## Demonstation
+
+### *Stylish format*
+
+Comparison of 2 simple files:
+
+--- Asciinema of gendiff simple_file1.json simple_file2.json
+
+Comparison of 2 nested files:
+
+--- Asciinema of gendiff nested_file1.json nested_file2.json
+
+### *Plain format*
+
+Comparison of 2 simple files:  
+  
+--- Asciinema of gendiff --format plain simple_file1.json simple_file2.json  
+  
+Comparison of 2 nested files:  
+  
+--- Asciinema of gendiff --format plain nested_file1.json nested_file2.json
+
+
+### *JSON format*
+
+Comparison of 2 simple files:  
+  
+--- Asciinema of gendiff --format json simple_file1.json simple_file2.json  
+  
+Comparison of 2 nested files:  
+  
+--- Asciinema of gendiff --format json nested_file1.json nested_file2.json
+
+> Note: If there is no specific format provided when using the package, default output format is *Stylish*. 
+
+## Requirements
+
+Python = "^3.10"  
+PyYAML = "^6.0"
