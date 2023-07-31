@@ -75,31 +75,31 @@ or
 
 Comparison of 2 simple files:
 
---- Asciinema of gendiff simple_file1.json simple_file2.json
+[![asciicast](https://asciinema.org/a/7kNi0MjE6l3876cSMnjtNTPQE.svg)](https://asciinema.org/a/7kNi0MjE6l3876cSMnjtNTPQE)
 
 Comparison of 2 nested files:
 
---- Asciinema of gendiff nested_file1.json nested_file2.json
+[![asciicast](https://asciinema.org/a/Jx5gXlwdIDbSy6LjymLbI7d3o.svg)](https://asciinema.org/a/Jx5gXlwdIDbSy6LjymLbI7d3o)
 
 ### *Plain format*
 
 Comparison of 2 simple files:
 
---- Asciinema of gendiff --format plain simple_file1.json simple_file2.json
+[![asciicast](https://asciinema.org/a/pX5WmYUVtRheBHdL1Pz2sZAUH.svg)](https://asciinema.org/a/pX5WmYUVtRheBHdL1Pz2sZAUH)
 
 Comparison of 2 nested files:
 
---- Asciinema of gendiff --format plain nested_file1.json nested_file2.json
+[![asciicast](https://asciinema.org/a/RmnZVhAFIF8ZJG13QZnZjXYdH.svg)](https://asciinema.org/a/RmnZVhAFIF8ZJG13QZnZjXYdH)
 
 ### *JSON format*
 
 Comparison of 2 simple files:
 
---- Asciinema of gendiff --format json simple_file1.json simple_file2.json
+[![asciicast](https://asciinema.org/a/fOD4vGVVny3WYHBIHyaZPlI9q.svg)](https://asciinema.org/a/fOD4vGVVny3WYHBIHyaZPlI9q)
 
 Comparison of 2 nested files:
 
---- Asciinema of gendiff --format json nested_file1.json nested_file2.json
+asciinema.org/a/ajAjwzgi9wuThx1MCv4hcXp2s
 
 > Note: If there is no specific format provided when using the package, default output format is *Stylish*.
 
