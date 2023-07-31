@@ -26,12 +26,12 @@ order.
 > Sidenote: This project was created by [Hexlet.io](https://hexlet.io) student as a part of
 > a ["Python Developer"](https://ru.hexlet.io/programs/python) learning course.
 
-### Supported formats
+#### Supported formats
 
 - JSON
 - YAML
 
-### Various output formats
+#### Various output formats
 
 - Plain text
 - Structured text
@@ -54,14 +54,14 @@ Use [poetry](https://python-poetry.org/docs/) and pip to install the package:
 
 ## Usage
 
-Difference Generator can be used as an **external library** or as **CLI tool**.
+Difference Generator can be used as an **external library** or as **Command Line Interface (CLI) tool**.
 
 ### As an external library
 
     from gendiff import generate_diff  
     diff = generate_diff(file_path1, file_path2, file_format)
 
-### As CLI tool
+### As Command Line Interface tool
 
     gendiff [-f file_format] file_path1 file_path2
 
