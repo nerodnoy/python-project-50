@@ -1,12 +1,39 @@
 import json
 
 
-def create_json(diff):
+def create_json(diff: dict) -> str:
+    """
+    Create the difference tree in "json" format.
+
+    This function takes the difference tree as input and converts
+    it into a JSON-formatted string
+    with indentation for better readability.
+
+    :param diff: The difference tree as a dictionary.
+    :type diff: dict
+    :return: A string representation of the difference tree in "json" format.
+    :rtype: str
+    """
+
     result = json.dumps(format_json(diff), indent=4)
     return result
 
 
-def format_json(data):
+def format_json(data) -> str:
+    """
+    Recursively format the difference tree into a dictionary.
+
+    This function iterates through the difference tree nodes and
+    returns a string representation of the differences.
+    Each node's key is associated with its type and relevant
+    values like old_value, new_value, or nested differences.
+
+    :param data: The difference node or subtree as a list of dictionaries.
+    :type data: list
+    :return: A string representation of the difference.
+    :rtype: str
+    """
+
     diff_json = {}
     data.sort(key=lambda node: node['key'])
 
