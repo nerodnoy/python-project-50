@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3ab4709b-aa36-4e25-9ebb-682c0b782cfb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/gendiff/formatters/json_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/fixtures/results/json_nested.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/fixtures/results/json_simple.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/formatters/format_ouput.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/formatters/format_ouput.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gendiff/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/gendiff/parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_gendiff.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gendiff.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2St7s0n4UoStoP45ToM8q91Rj2S" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/nastya/python-project-50"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="pytest for test_gendiff.test_generate_diff_plain.test_generate_diff_stylish" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python-project-50" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_gendiff.test_generate_diff_plain.test_generate_diff_stylish&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest for test_gendiff.test_generate_diff_plain.test_generate_diff_stylish" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ab4709b-aa36-4e25-9ebb-682c0b782cfb" name="Changes" comment="" />
+      <created>1689954226251</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689954226251</updated>
+    </task>
+    <servers />
+  </component>
+</project>
