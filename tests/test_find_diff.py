@@ -1,5 +1,5 @@
 import pytest
-from gendiff.find_diff import get_diff, add_node
+from gendiff.make_diff import get_diff, add_node
 
 
 def test_removed_node():

@@ -1,42 +1,42 @@
-import argparse
+import json
+import yaml
 
 
-def get_parser_args():
+def open_file(file_path: str):
     """
-    Parse command-line arguments for generating the difference report.
+    Open and load a file in YAML or JSON format.
 
-    This function sets up an ArgumentParser to handle command-line arguments.
-    It defines the required positional arguments for the paths to the first
-    and second files to compare. Additionally, it allows specifying an
-    optional argument to choose the output format of the difference report.
+    This function takes a file path as input, opens the file, and then
+    attempts to load its contents as YAML or JSON data, depending on the file
+    extension. The loaded data is returned.
 
-
-    Parameters:
-        - first_file: Path to the first file for comparison.
-        - second_file: Path to the second file for comparison.
-        - format: Format for output (e.g., default='stylish', 'plain', 'json').
-
-    :return: Parsed input values (argparse arguments)
+    :param file_path: The path to the file to be opened and loaded.
+    :type file_path: str
+    :return: The loaded data from the file.
+    :rtype: dict or list
     """
 
-    parser = argparse.ArgumentParser(
-        description="Generate diff between two files. "
-                    "Supported extensions: JSON/YAML/YML."
-    )
+    with open(file_path, "r") as file:
+        return load_file(file_path, file)
 
-    parser.add_argument("first_file", type=str, help='path/to/the/first/file')
-    parser.add_argument("second_file", type=str, help='path/to/the/second/file')
 
-    parser.add_argument(
-        "-f", "--format",
-        type=str,
-        help="set format of output stylish, plain or json",
-        choices=["stylish",
-                 "plain",
-                 "json"],
-        default='stylish'
-    )
+def load_file(path: str, file) -> dict:
+    """
+    Load data from a file.
 
-    args = parser.parse_args()
+    This function takes a file path and an open file object as input. It
+    detects the file format based on the file path's extension (.json for JSON
+    or .yaml or .yml for YAML) and loads the data from the file accordingly.
+    The loaded data is returned.
 
-    return args
+    :param path: The path to the file.
+    :type path: str
+    :param file: An open file object.
+    :type file: file
+    :return: The loaded data from the file.
+    :rtype: dict
+    """
+    if path.endswith(".yaml") or path.endswith(".yml"):
+        return yaml.safe_load(file)
+    elif path.endswith(".json"):
+        return json.load(file)
