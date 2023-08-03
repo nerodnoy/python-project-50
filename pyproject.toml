@@ -1,13 +1,15 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Difference Generator is a tool that determines the difference between two data structures."
 authors = ["Artem Iliushin <thatsforsure@mail.ru>"]
+repository = 'https://github.com/nerodnoy/python-project-50'
 readme = "README.md"
+classifiers = ["Tool :: Find the Difference"]
 packages = [{include = "gendiff"}]
 
 [tool.poetry.dependencies]
-python = "3.11.*"
+python = "^3.11"
 pyyaml = "^6.0.1"
 
 [tool.poetry.scripts]
