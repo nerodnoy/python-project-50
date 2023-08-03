@@ -1,4 +1,4 @@
-from gendiff.diff import generate_diff
+from gendiff.diff_engine import generate_diff
 from gendiff.parser import get_parser_args
 
 
