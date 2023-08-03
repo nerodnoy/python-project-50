@@ -39,18 +39,18 @@ def test_generate_diff_plain(path1, path2, expected):
                            'tests/fixtures/yaml/file_simple2.yaml',
                            get_data_for_results(
                                'tests/fixtures/results/stylish_simple.txt')),
-                          # ('tests/fixtures/json/file_nested1.json',
-                          #  'tests/fixtures/json/file_nested2.json',
-                          #  get_data_for_results(
-                          #      'tests/fixtures/results/stylish_nested.txt')),
-                          # ('tests/fixtures/yaml/file_nested1.yaml',
-                          #  'tests/fixtures/yaml/file_nested2.yaml',
-                          #  get_data_for_results(
-                          #      'tests/fixtures/results/stylish_nested.txt'))
+                          ('tests/fixtures/json/file_nested1.json',
+                           'tests/fixtures/json/file_nested2.json',
+                           get_data_for_results(
+                               'tests/fixtures/results/stylish_nested.txt')),
+                          ('tests/fixtures/yaml/file_nested1.yaml',
+                           'tests/fixtures/yaml/file_nested2.yaml',
+                           get_data_for_results(
+                               'tests/fixtures/results/stylish_nested.txt'))
                           ]
                          )
 def test_generate_diff_stylish(path1, path2, expected):
-    assert generate_diff(path1, path2, 'stylish') == expected
+    assert generate_diff(path1, path2, 'stylish') == expected.strip()  # stripped
 
 
 @pytest.mark.parametrize('path1, path2, expected',
