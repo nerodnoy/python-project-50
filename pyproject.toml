@@ -9,7 +9,7 @@ classifiers = ["Tool :: Find the Difference"]
 packages = [{include = "gendiff"}]
 
 [tool.poetry.dependencies]
-python = ">=3.11"
+python = "^3.11"
 pyyaml = "^6.0.1"
 
 [tool.poetry.scripts]
