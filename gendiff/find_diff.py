@@ -13,7 +13,7 @@ def get_diff(file1: dict, file2: dict) -> list:
     :param file2: The second dictionary to compare.
     :type file2: dict
     :return: A list representing the difference tree.
-    :rtype: list[dict]
+    :rtype: list
     """
 
     keys = sorted(set(file1.keys()) | set(file2.keys()))

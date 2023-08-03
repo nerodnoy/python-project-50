@@ -33,7 +33,7 @@ def format_diff(data: list, depth: int = 0) -> str:
     indentation to represent nested structures.
 
     :param data: Difference tree node or subtree as a list of dictionaries.
-    :type data: list[dict]
+    :type data: list
     :param depth: Current depth level for indentation (optional).
     :type depth: int
     :return: String representation of the difference in "stylish" format.
