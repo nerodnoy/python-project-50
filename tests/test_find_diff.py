@@ -1,4 +1,3 @@
-import pytest
 from gendiff.make_diff import get_diff, add_node
 
 
